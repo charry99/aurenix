@@ -21,7 +21,7 @@ export default function Dashboard() {
         lede="Your local submissions, demo holdings, reputation, and mission history — all stored in this browser."
       />
       <DemoNote>
-        Demo data — stored locally in your browser. No wallet is connected, no real
+        No wallet is connected, no real
         NFT is held, and no real rewards have been earned. Everything here reflects
         only what you have done in the Mission Hub on this device.
       </DemoNote>

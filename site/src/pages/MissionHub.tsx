@@ -107,7 +107,7 @@ export default function MissionHub() {
         lede="Real work, verified evidence, sponsor-funded rewards. Every reward below is a proposed amount — no live sponsor, no payout obligation yet."
       />
       <DemoNote>
-        Demo data — stored locally in your browser. The 8 seeded missions are demo
+        The 8 seeded missions are demo
         listings with a demo sponsor. Your submissions and any missions you create are
         saved in localStorage on this device only.
       </DemoNote>

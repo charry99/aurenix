@@ -37,6 +37,7 @@ export const asset = (p: string) => `${import.meta.env.BASE_URL}assets/${p}`
 export const ASSETS = {
   logo: asset('logo.png'),
   hero: asset('hero.png'),
+  heroBg: asset('aurenix-hero-bg.jpg'),
   nftBronze: asset('nft-bronze.png'),
   nftSilver: asset('nft-silver.png'),
   nftGold: asset('nft-gold.png'),

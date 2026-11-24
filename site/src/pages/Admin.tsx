@@ -63,7 +63,7 @@ export default function Admin() {
         lede="Mission approvals, supply counters, token distribution, agents, and security — all demo data, all local."
       />
       <DemoNote>
-        Demo data — stored locally in your browser. This is not a real admin panel:
+        This is not a real admin panel:
         there are no real users, no contracts, and no funds. Approvals here only change
         local demo state.
       </DemoNote>

@@ -6,27 +6,31 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div>
-          <p className="eyebrow">{BRAND.platform} — Phase 1 MVP</p>
-          <h1>
-            {BRAND.tagline}
-          </h1>
-          <p className="lede">{BRAND.subtitle}</p>
-          <p>
-            Complete real work — research, code, content, security reviews, design — and
-            earn sponsor-funded rewards, {BRAND.token} tokens, and non-transferable
-            reputation. An NFT membership opens the door; your work earns the rewards.
-            No guaranteed income, no promised returns.
-          </p>
-          <div className="btn-row">
-            <Link className="btn" to="/missions">Browse missions</Link>
-            <Link className="btn ghost" to="/how-it-works">How it works</Link>
-            <Link className="btn ghost" to="/nft-collection">{BRAND.nftCollection} — 2,222 supply</Link>
-          </div>
+        <p className="eyebrow">{BRAND.platform} — Phase 1 MVP</p>
+        <h1>
+          Work. Build. <span className="grad">Earn.</span>
+        </h1>
+        <p className="lede">{BRAND.subtitle}</p>
+        <p className="hero-sub">
+          Complete real work — research, code, content, security reviews, design — and
+          earn sponsor-funded rewards, {BRAND.token} tokens, and non-transferable
+          reputation. An NFT membership opens the door; your work earns the rewards.
+          No guaranteed income, no promised returns.
+        </p>
+        <div className="btn-row">
+          <Link className="btn" to="/missions">Browse missions</Link>
+          <Link className="btn ghost" to="/how-it-works">How it works</Link>
+          <Link className="btn ghost" to="/nft-collection">{BRAND.nftCollection} — 2,222 supply</Link>
         </div>
-        <div>
-          <img src={ASSETS.hero} alt="AURENIX hero artwork" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+        <div className="status-strip" aria-label="Project status">
+          <span><span className="dot">◆</span>Phase 1 MVP — <strong>Days 1–7 of 90</strong></span>
+          <span><span className="dot">◆</span>Chain — <strong>BNB testnet</strong></span>
+          <span><span className="dot">◆</span>Mainnet — <strong>not deployed yet</strong></span>
         </div>
+        <figure className="hero-art">
+          <img src={ASSETS.hero} alt="AURENIX Genesis artwork — golden guardian over a dark city" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+          <figcaption>{BRAND.nftCollection} — four tiers, one membership. Artwork from the Genesis collection.</figcaption>
+        </figure>
       </section>
 
       <div className="stat-row">

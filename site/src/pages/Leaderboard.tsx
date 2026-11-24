@@ -17,7 +17,7 @@ export default function Leaderboard() {
         lede="Reputation points come only from submissions made in this demo. No token holdings, no fake users, no invented scores."
       />
       <DemoNote>
-        Demo data — stored locally in your browser. This board reflects only
+        This board reflects only
         submissions saved on this device. There are no other contributors yet.
       </DemoNote>
 

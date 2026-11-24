@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { ASSETS, BRAND } from '../config'
+import BackgroundFX from './BackgroundFX'
 
 const NAV: { to: string; label: string }[] = [
   { to: '/', label: 'Home' },
@@ -25,6 +26,13 @@ export function Layout() {
   const [open, setOpen] = useState(false)
   return (
     <>
+      {/* Site-wide animated background: still photo + live gold-dust canvas,
+          with gradient veils for readability. Fixed behind all content. */}
+      <div className="bg-fx" aria-hidden="true">
+        <div className="bg-fx-img" />
+        <BackgroundFX />
+        <div className="bg-fx-veil" />
+      </div>
       <header className="site">
         <div className="nav-inner">
           <Link className="brand" to="/" onClick={() => setOpen(false)}>
@@ -109,7 +117,7 @@ export function Layout() {
 
 export function PageHead({ eyebrow, title, lede }: { eyebrow: string; title: string; lede?: string }) {
   return (
-    <section>
+    <section className="page-head">
       <p className="eyebrow">{eyebrow}</p>
       <h1>{title}</h1>
       {lede ? <p className="lede">{lede}</p> : null}
