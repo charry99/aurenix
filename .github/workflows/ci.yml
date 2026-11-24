@@ -1,0 +1,33 @@
+name: Build check
+
+# CI only — deployment is to Cloudflare Pages (project `aurenix`), not
+# GitHub Pages. Deploy with `wrangler pages deploy site/dist
+# --project-name aurenix` or via the Cloudflare dashboard (connect the
+# GitHub repo to the Pages project).
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'site/**'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths:
+      - 'site/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run build
