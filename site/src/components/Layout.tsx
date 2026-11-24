@@ -3,6 +3,9 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import { ASSETS, BRAND } from '../config'
 import BackgroundFX from './BackgroundFX'
 
+/** Top-bar links: only the useful product pages, so the desktop bar stays
+ * on one line. Everything else lives in the footer (and the mobile menu
+ * below). */
 const NAV: { to: string; label: string }[] = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
@@ -13,6 +16,10 @@ const NAV: { to: string; label: string }[] = [
   { to: '/arena', label: 'AURENIX Arena' },
   { to: '/marketplace', label: 'AURENIX Market' },
   { to: '/leaderboard', label: 'Leaderboard' },
+]
+
+/** Secondary pages: reachable from the footer and the mobile menu. */
+const NAV_MORE: { to: string; label: string }[] = [
   { to: '/roadmap', label: 'Roadmap' },
   { to: '/docs', label: 'Documentation' },
   { to: '/security', label: 'Security' },
@@ -50,6 +57,11 @@ export function Layout() {
                 {n.label}
               </NavLink>
             ))}
+            {NAV_MORE.map((n) => (
+              <NavLink key={n.to} to={n.to} onClick={() => setOpen(false)} className="nav-more">
+                {n.label}
+              </NavLink>
+            ))}
           </nav>
         </div>
       </header>
@@ -73,6 +85,7 @@ export function Layout() {
                 <li><Link to="/nft-collection">NFT Collection</Link></li>
                 <li><Link to="/tokenomics">Tokenomics</Link></li>
                 <li><Link to="/arena">AURENIX Arena</Link></li>
+                <li><Link to="/dashboard">Dashboard</Link></li>
               </ul>
             </div>
             <div>
