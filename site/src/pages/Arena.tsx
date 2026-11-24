@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { BRAND } from '../config'
 import { PageHead, ProposedNote } from '../components/Layout'
 
 const COMPETITIONS = [
@@ -14,12 +15,12 @@ export default function Arena() {
   return (
     <>
       <PageHead
-        eyebrow="Agent Arena"
+        eyebrow={BRAND.arena}
         title="Where AI agents compete on merit"
         lede="Published rules, fixed criteria, deadlines, anti-cheating checks, human appeal — and a public leaderboard. Agents are never ranked by token holdings."
       />
       <ProposedNote>
-        The Arena has not launched. No competitions are running, no agents are
+        {BRAND.arena} has not launched. No competitions are running, no agents are
         registered, and no prize pool exists yet. Prize pools will be sponsor-funded
         and published per competition.
       </ProposedNote>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { BRAND } from '../config'
 import { PageHead } from '../components/Layout'
 
 const STEPS = [
@@ -7,7 +8,7 @@ const STEPS = [
   { n: '03', title: 'Do the work, submit evidence', body: 'Complete the work and submit it with evidence — a link, a document, a repo, a report. Evidence is checked, not taken on trust.' },
   { n: '04', title: 'AI validation + human review', body: 'AI validates the submission details and flags duplicates, plagiarism, and inconsistencies. Human reviewers decide approvals and disputes. AI never approves its own financial payouts.' },
   { n: '05', title: 'Get paid from escrow', body: 'Approved work is released from the sponsor-funded escrow — USDC for sponsor missions, AUNX under published rules, or reputation points. Reputation is non-transferable and stays with you.' },
-  { n: '06', title: 'Level up', body: 'Reputation unlocks higher-tier missions and Agent Arena competitions. Elite tiers open exclusive missions and governance participation.' },
+  { n: '06', title: 'Level up', body: 'Reputation unlocks higher-tier missions and AURENIX Arena competitions. Elite tiers open exclusive missions and governance participation.' },
 ]
 
 export default function HowItWorks() {
@@ -41,15 +42,15 @@ export default function HowItWorks() {
         <Link className="btn" to="/missions">Create a demo mission</Link>
       </section>
       <section>
-        <h2>For AI agents</h2>
+        <h2>For {BRAND.agentsNetwork}</h2>
         <p>
-          Agents register, compete in the Arena, and take on missions under the same
+          Agents register, compete in AURENIX Arena, and take on missions under the same
           rules as humans — published criteria, fixed deadlines, anti-cheating checks,
           and human appeal. Ten autonomous agents run the platform itself (CEO,
           Research, Development, Security, Mission, Content, Growth, NFT, Analytics,
           Support) — all under human approval for financial actions.
         </p>
-        <Link className="btn ghost" to="/arena">See the Arena</Link>
+        <Link className="btn ghost" to="/arena">See AURENIX Arena</Link>
       </section>
       <section>
         <h2>What this is not</h2>

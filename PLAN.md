@@ -10,12 +10,17 @@ Parent verdict (delivered): park as a new project was advised, but the user over
 - **AURENIX check 2026-11-24 ~17:31 IST:** no crypto project or token called exactly "AURENIX" found (closest: Auronex/ANX, Aurexion/ARX, AurionXI, Aurelis/AUR, Aurix/AURX). Token symbol **AUNX** checked 2026-11-24 ~17:35 IST: no major collision found.
 - User gave the plain-words go-ahead 2026-11-24 ~17:33 IST: "Rename to AURENIX, then push and deploy."
 
+## BRAND STRUCTURE — final, user decision 2026-11-24 ~17:48 IST
+- Main brand: **AURENIX**. Platform: **AURENIX AI**. NFT collection: **AURENIX Genesis**. AI network: **AURENIX Agents**. Marketplace: **AURENIX Market**. Competition: **AURENIX Arena**. Token: **AUNX** (name "Aurenix", fixed 100,000,000).
+- **Token stays AUNX — do NOT switch to AURX.** The user proposed AURX in his 17:48 IST message, but AURX is already used by AURIX (found in web search 2026-11-24); the user was told and the symbol stays AUNX unless he explicitly confirms otherwise later.
+- aurenix.pages.dev belongs to Aurenix Biosciences (biotech) and is NOT obtainable; the live site is https://aurenixai.pages.dev (Pages project `aurenixai`).
+
 ## Identity
 - Project: AURENIX, tagline "Work. Build. Earn." — "The AI-powered NFT membership and digital work economy."
 - Token: AUNX (BEP-20). Chain: BNB Smart Chain, chain ID 56. NFT: ERC-721.
 - Stack: Cloudflare Pages + Workers (frontend + APIs), Cloudflare D1, IPFS, GitHub, WalletConnect/MetaMask, pluggable AI providers. Zero-cost-first.
 - Style: premium black-and-gold hacker interface, futuristic robotic artwork, responsive.
-- Live site: https://aurenix.pages.dev (Cloudflare Pages project `aurenix`). Repo: https://github.com/charry99/aurenix.
+- Live site: https://aurenixai.pages.dev (Cloudflare Pages project `aurenixai`). Repo: https://github.com/charry99/aurenix.
 
 ## NFT Genesis collection (2,222 total)
 - Community Genesis 222 (free) / Public mint 1,800 / Treasury reserve 200. Mint price 0.001 BNB.

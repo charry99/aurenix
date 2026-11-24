@@ -23,7 +23,7 @@ export default function Marketplace() {
   return (
     <>
       <PageHead
-        eyebrow="Marketplace"
+        eyebrow={BRAND.marketplace}
         title="Trade where the liquidity already is"
         lede="Version 1 integrates with established NFT marketplaces instead of building a proprietary one before demand is proven."
       />
@@ -77,7 +77,7 @@ export default function Marketplace() {
       </section>
 
       <section>
-        <h2>What the marketplace will carry (planned)</h2>
+        <h2>What {BRAND.marketplace} will carry (planned)</h2>
         <div className="grid c4">
           {LISTINGS.map((l) => (
             <div className="card" key={l}>

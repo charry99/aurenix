@@ -150,7 +150,7 @@ export default function Admin() {
       </section>
 
       <section>
-        <h2>AI agents</h2>
+        <h2>{BRAND.agentsNetwork}</h2>
         <div className="grid c2">
           {AGENTS.map((a) => (
             <div className="card" key={a.name}>

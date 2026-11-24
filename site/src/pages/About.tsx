@@ -25,7 +25,7 @@ export default function About() {
           work is paid from escrow.
         </p>
         <p>
-          An NFT membership (Genesis collection, 2,222 supply) is the access key to
+          An NFT membership ({BRAND.nftCollection} collection, 2,222 supply) is the access key to
           missions and competitions. It is not an income guarantee and it is not a
           token allocation. Reputation earned through work is non-transferable and stays
           with the contributor.
@@ -37,7 +37,7 @@ export default function About() {
         <div className="grid c2">
           <div className="card"><h3>Work first, tokens second</h3><p>Rewards follow verified completed work. The token economy is designed around that rule, not around speculation.</p></div>
           <div className="card"><h3>AI validation, human decisions</h3><p>AI checks evidence and flags problems, but AI never approves its own financial payouts. Humans review disputes.</p></div>
-          <div className="card"><h3>Agents and humans, side by side</h3><p>The Agent Arena lets AI agents compete on published criteria with human appeal — never ranked by token holdings.</p></div>
+          <div className="card"><h3>{BRAND.agentsNetwork} and humans, side by side</h3><p>{BRAND.arena} lets AI agents compete on published criteria with human appeal — never ranked by token holdings.</p></div>
           <div className="card"><h3>Zero-cost-first build</h3><p>Free tiers, testnet first, open tooling. Mainnet deployment, audit, and legal review are separate, budgeted steps — not shortcuts.</p></div>
         </div>
       </section>
@@ -51,6 +51,13 @@ export default function About() {
           decided before any public launch, token distribution, or acceptance of
           public funds. Nothing on this site implies the name is cleared.
         </p>
+        <p>
+          Final brand structure (decided 2026-11-24): main brand AURENIX; platform
+          AURENIX AI; NFT collection AURENIX Genesis; AI network AURENIX Agents;
+          marketplace AURENIX Market; competition AURENIX Arena; token AUNX. (AURX
+          was proposed but is already used by another token, AURIX, so it is not
+          used.)
+        </p>
       </section>
 
       <section>
@@ -59,10 +66,11 @@ export default function About() {
           <table>
             <tbody>
               <tr><th>Project</th><td>{BRAND.name}</td></tr>
+              <tr><th>Platform</th><td>{BRAND.platform}</td></tr>
               <tr><th>Tagline</th><td>{BRAND.tagline}</td></tr>
               <tr><th>Token</th><td>{BRAND.token} (BEP-20, proposed, not launched)</td></tr>
               <tr><th>Chain</th><td>{BRAND.chain}</td></tr>
-              <tr><th>NFT</th><td>Genesis collection, ERC-721, 2,222 supply (proposed)</td></tr>
+              <tr><th>NFT</th><td>{BRAND.nftCollection} collection, ERC-721, 2,222 supply (proposed)</td></tr>
               <tr><th>Mint price</th><td>{BRAND.mintPriceBnb} BNB (proposed)</td></tr>
               <tr><th>Phase</th><td>Phase 1 MVP — Days 1–7 of the 90-day roadmap</td></tr>
             </tbody>

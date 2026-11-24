@@ -21,6 +21,11 @@ npm run preview  # serve the production build
 Single config: `site/src/config.ts` — rename the brand there and the whole
 site follows.
 
+Final brand structure (user decision 2026-11-24): main brand AURENIX;
+platform AURENIX AI; NFT collection AURENIX Genesis; AI network AURENIX
+Agents; marketplace AURENIX Market; competition AURENIX Arena; token AUNX
+(AURX was proposed but is already used by AURIX, so it is not used).
+
 ## Assets
 
 The site references `/assets/logo.png`, `/assets/hero.png`,
@@ -37,8 +42,8 @@ browser's localStorage (`aunx_*` keys). Nothing touches a chain or a server.
 
 ## Deploy
 
-Cloudflare Pages project `aurenix` → https://aurenix.pages.dev (Vite base
+Cloudflare Pages project `aurenixai` → https://aurenixai.pages.dev (Vite base
 `/`). Deploy from the repo with `wrangler pages deploy site/dist
---project-name aurenix`, or connect the GitHub repo to the Pages project in
+--project-name aurenixai`, or connect the GitHub repo to the Pages project in
 the Cloudflare dashboard. `.github/workflows/ci.yml` runs a build check on
 every push to `main`/`master`.

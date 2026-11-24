@@ -3,8 +3,8 @@ import { PageHead } from '../components/Layout'
 const PHASES = [
   { days: 'Days 1–7 — MVP', status: 'in progress — MVP', current: true, items: ['Website + brand', 'Wallet connection (demo)', 'User dashboard', 'Genesis NFT artwork', 'Mission creation + submissions', 'Admin dashboard', 'BNB testnet contracts'] },
   { days: 'Days 8–15 — Private beta', status: 'Planned', current: false, items: ['Invite-only testers', 'First real missions with demo sponsors', 'Feedback loop and fixes', 'Testnet contract testing'] },
-  { days: 'Days 16–30 — Community launch', status: 'Planned', current: false, items: ['Public community opening', 'Genesis NFT mint (testnet first)', 'First Agent Arena pilot', 'Community governance draft'] },
-  { days: 'Days 31–45 — Commercial launch', status: 'Planned', current: false, items: ['First paying sponsor — the key milestone', 'Sponsored missions live', 'Marketplace integration live', 'Revenue reporting (real numbers only)'] },
+  { days: 'Days 16–30 — Community launch', status: 'Planned', current: false, items: ['Public community opening', 'Genesis NFT mint (testnet first)', 'First AURENIX Arena pilot', 'Community governance draft'] },
+  { days: 'Days 31–45 — Commercial launch', status: 'Planned', current: false, items: ['First paying sponsor — the key milestone', 'Sponsored missions live', 'AURENIX Market integration live', 'Revenue reporting (real numbers only)'] },
   { days: 'Days 46–60 — Token prep', status: 'Planned', current: false, items: ['Tokenomics finalisation', 'Legal review (India: VDA, tax, FIU-IND)', 'Audit planning', 'Vesting and lock design'] },
   { days: 'Days 61–75 — Token launch prep', status: 'Planned', current: false, items: ['Audit complete', 'Liquidity planning and disclosure', 'Launch communications', 'No launch without all approvals'] },
   { days: 'Days 76–90 — Expansion', status: 'Planned', current: false, items: ['New mission categories', 'More sponsors and partnerships', 'Agent ecosystem growth', '90-day review against targets'] },

@@ -9,8 +9,8 @@ const NAV: { to: string; label: string }[] = [
   { to: '/nft-collection', label: 'NFT Collection' },
   { to: '/tokenomics', label: 'Tokenomics' },
   { to: '/missions', label: 'Mission Hub' },
-  { to: '/arena', label: 'Agent Arena' },
-  { to: '/marketplace', label: 'Marketplace' },
+  { to: '/arena', label: 'AURENIX Arena' },
+  { to: '/marketplace', label: 'AURENIX Market' },
   { to: '/leaderboard', label: 'Leaderboard' },
   { to: '/roadmap', label: 'Roadmap' },
   { to: '/docs', label: 'Documentation' },
@@ -30,7 +30,7 @@ export function Layout() {
           <Link className="brand" to="/" onClick={() => setOpen(false)}>
             <img src={ASSETS.logo} alt={`${BRAND.name} logo`} onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
             <span>
-              MINT<span className="gold">2</span>EARN <span className="gold">AI</span>
+              AURENIX <span className="gold">AI</span>
             </span>
           </Link>
           <button className="nav-toggle" onClick={() => setOpen((v) => !v)} aria-label="Toggle navigation">
@@ -64,7 +64,7 @@ export function Layout() {
                 <li><Link to="/missions">Mission Hub</Link></li>
                 <li><Link to="/nft-collection">NFT Collection</Link></li>
                 <li><Link to="/tokenomics">Tokenomics</Link></li>
-                <li><Link to="/arena">Agent Arena</Link></li>
+                <li><Link to="/arena">AURENIX Arena</Link></li>
               </ul>
             </div>
             <div>

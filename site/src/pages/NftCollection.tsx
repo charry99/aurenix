@@ -1,4 +1,4 @@
-import { ASSETS } from '../config'
+import { ASSETS, BRAND } from '../config'
 import { PageHead, ProposedNote } from '../components/Layout'
 
 const TIERS = [
@@ -13,11 +13,11 @@ export default function NftCollection() {
     <>
       <PageHead
         eyebrow="NFT Collection"
-        title="Genesis Collection — 2,222 NFTs"
+        title={`${BRAND.nftCollection} — 2,222 NFTs`}
         lede="Four tiers. One membership. Work earns the rewards — holding does not."
       />
       <ProposedNote>
-        The Genesis collection has not been deployed or minted. Supply split, tiers,
+        The {BRAND.nftCollection} collection has not been deployed or minted. Supply split, tiers,
         and price below are the proposed figures from the project plan.
       </ProposedNote>
 
@@ -59,7 +59,7 @@ export default function NftCollection() {
         <h2>Trading</h2>
         <p>
           Version 1 integrates with established NFT marketplaces rather than building a
-          proprietary one. See the <a href="#/marketplace">Marketplace</a> page for the
+          proprietary one. See the <a href="#/marketplace">AURENIX Market</a> page for the
           proposed fee schedule and the external marketplace link.
         </p>
       </section>

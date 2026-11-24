@@ -32,7 +32,7 @@ export default function Docs() {
               <tr><td>GenesisNFT</td><td>ERC-721 membership, 2,222 supply</td><td>Planned — not deployed</td></tr>
               <tr><td>MissionEscrow</td><td>Holds sponsor funds until work is verified</td><td>Planned — not deployed</td></tr>
               <tr><td>RewardDistributor</td><td>Releases approved rewards</td><td>Planned — not deployed</td></tr>
-              <tr><td>Marketplace</td><td>Trading and fees (v1 integrates externally)</td><td>Planned — not deployed</td></tr>
+              <tr><td>AURENIX Market</td><td>Trading and fees (v1 integrates externally)</td><td>Planned — not deployed</td></tr>
               <tr><td>Governance</td><td>Elite-tier governance participation</td><td>Planned — not deployed</td></tr>
               <tr><td>Treasury</td><td>Multisig treasury</td><td>Planned — not deployed</td></tr>
             </tbody>

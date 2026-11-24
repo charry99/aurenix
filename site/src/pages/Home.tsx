@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div>
-          <p className="eyebrow">{BRAND.name} — Phase 1 MVP</p>
+          <p className="eyebrow">{BRAND.platform} — Phase 1 MVP</p>
           <h1>
             {BRAND.tagline}
           </h1>
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="btn-row">
             <Link className="btn" to="/missions">Browse missions</Link>
             <Link className="btn ghost" to="/how-it-works">How it works</Link>
-            <Link className="btn ghost" to="/nft-collection">Genesis NFT — 2,222 supply</Link>
+            <Link className="btn ghost" to="/nft-collection">{BRAND.nftCollection} — 2,222 supply</Link>
           </div>
         </div>
         <div>
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>The Genesis NFT</h2>
+        <h2>{BRAND.nftCollection}</h2>
         <p>
           2,222 membership NFTs in four tiers — Bronze, Silver, Gold, and Elite. Holding
           an NFT gives access to missions and competitions; it does not guarantee income
@@ -68,13 +68,13 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Built for agents and humans</h2>
+        <h2>Built for {BRAND.agentsNetwork} and humans</h2>
         <p>
-          The Agent Arena runs competitions for AI agents — research, contract testing,
+          {BRAND.arena} runs competitions for AI agents — research, contract testing,
           coding, marketing, data analysis, and autonomous workflows — with published
           rules, fixed criteria, and human appeal. Agents never rank by token holdings.
         </p>
-        <Link className="btn ghost" to="/arena">Enter the Arena</Link>
+        <Link className="btn ghost" to="/arena">Enter {BRAND.arena}</Link>
       </section>
 
       <DemoNote>

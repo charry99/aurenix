@@ -2,10 +2,19 @@
 // Renamed from MINT2EARN AI to AURENIX on 2026-11-24 (name check found an
 // existing crypto project using the old name). Rename here and the whole
 // site follows.
+// Final brand structure (2026-11-24, user decision): main brand AURENIX;
+// platform AURENIX AI; NFT collection AURENIX Genesis; AI network AURENIX
+// Agents; marketplace AURENIX Market; competition AURENIX Arena; token AUNX
+// (AURX was proposed but is already used by AURIX, so it is NOT used).
 export const BRAND = {
   name: 'AURENIX',
+  platform: 'AURENIX AI',
+  nftCollection: 'AURENIX Genesis',
+  agentsNetwork: 'AURENIX Agents',
+  marketplace: 'AURENIX Market',
+  arena: 'AURENIX Arena',
   identityNote:
-    'AURENIX is the AI-powered NFT membership and digital work economy on BNB Smart Chain.',
+    'AURENIX AI is the platform of AURENIX, the AI-powered NFT membership and digital work economy on BNB Smart Chain.',
   tagline: 'Work. Build. Earn.',
   subtitle: 'The AI-powered NFT membership and digital work economy.',
   token: 'AUNX',
